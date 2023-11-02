@@ -9,11 +9,8 @@ int main(void)
     {
         int count = 0;
         scanf("%s", word);
-        for(int i = 0; i < 100; i++)
-            if(word[i] != '\0')
+        for(int i = 0; word[i] != '\0'; i++)
                 count++;
-            else
-                break;
         if(count <= 10)
             printf("%s\n", word);
         else
